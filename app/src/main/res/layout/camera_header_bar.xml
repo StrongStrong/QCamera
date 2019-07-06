@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_menu_bar_height"
+    android:background="@color/main_menu_bg"
+    >
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="13dp"
+        android:src="@drawable/z_back_night"
+        android:background="?attr/list_item_press_bg"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/btn_switch_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_camera_top_bar_sw_camera" />
+
+        <ImageView
+            android:id="@+id/btn_flash_mode"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_flash_auto" />
+
+        <ImageView
+            android:id="@+id/btn_other_setting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_camera_top_bar_setting"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
